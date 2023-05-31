@@ -1,0 +1,44 @@
+#kyc_form{
+    padding: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    .kyc_form_container{
+        width: 70%;
+        margin-top: 4rem;
+        margin-bottom: 4rem;
+        padding: 2rem;
+        box-shadow: var(--box-shadow);
+
+        .main-header{
+            padding-bottom: 2rem;
+            text-align: center;
+        }
+        form{
+            .input_box{
+                margin-bottom: 2rem;
+            }
+            label{
+                margin-bottom: 0.7rem;
+                display: block;
+            }
+            .btn_group{
+                width: 100%;
+                display: flex;
+                align-items: center;
+                justify-content: space-around;
+
+                .btn-danger, .btn-success{
+                    width: 40%;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width:425px) {
+    .kyc_form_container{
+        width: 90% !important;
+    }
+}

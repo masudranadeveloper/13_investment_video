@@ -1,0 +1,116 @@
+form#recharge_payment {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#payment_form{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    width: 100%;
+    background: var(--bg-color);
+    .payment_form_wrapper{
+        margin-top: 4rem;
+        margin-bottom: 4rem;
+        width: 70%;
+        box-shadow: var(--box-shadow);
+        border-top: 10px solid var(--blue);
+        border-bottom: 10px solid var(--blue);
+        border-radius: var(--border-radius);
+        padding: 2rem;
+        .header{
+            h2{
+                text-align: center;
+                padding-top: 2rem;
+                padding-bottom: 2rem;
+                border-bottom: 1px solid var(--border);
+            }
+        }
+        .body{
+            padding-top: 2rem;
+            .body_top{
+                h2{
+                    padding-bottom: 2rem;
+                }
+            }
+            .body_middle{
+                background-color: var(--border);
+                padding: 2rem;
+                border-radius: var(--border-radius);
+
+                .body_middle_content_header{
+                    display: flex;
+                    align-items: center;
+                    justify-content: space-between;
+
+                    .body_middle_content_header_left, .body_middle_content_header_right{
+                        display: flex;
+                        align-items: start;
+                        flex-direction: column;
+                        gap: 1.5rem;
+                        .box{
+                            display: flex;
+                            align-items: start;
+                            flex-direction: column;
+                        }
+                    }
+                }
+            }
+            .body_middle_content_body{
+                padding-bottom: 2rem;
+                .title{
+                    text-align: center;
+                    padding-bottom: 2rem;
+                    padding-top: 2rem;
+                }
+                img{
+                    width: 50%;
+                    display: block;
+                    margin: auto;
+                }
+            }
+            .body_middle_content_footer{
+                .body_middle_content_footer_first{
+                    padding-bottom: 2rem;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    flex-direction: column;
+                    h2{
+                        word-break: break-all;
+                    }
+                }
+                .body_middle_content_footer_secound{
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    flex-direction: column;
+                }
+            }
+            .body_bottom{
+                padding-top: 2rem;
+                padding-bottom: 2rem;
+                .title{
+                    color: red;
+                    padding-bottom: 0.7rem;
+                    text-align: start;
+                }
+            }
+        }
+        .footer{
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+            button{
+                width: 40%;
+            }
+        }
+    }
+}
+
+@media (max-width:425px) {
+    #payment_form .payment_form_wrapper{
+        width: 90%;
+    }
+}

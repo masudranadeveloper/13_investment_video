@@ -1,0 +1,90 @@
+#profile_settings {
+  padding: 2rem;
+}
+#profile_settings .profile_settings_wraper .user_details {
+  padding: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  box-shadow: var(--box-shadow);
+  border-radius: var(--border-radius);
+}
+#profile_settings .profile_settings_wraper .user_details .images {
+  background-image: url(../../../images/packages/black-diamond.png);
+  height: 10rem;
+  width: 10rem;
+  border-radius: 50%;
+  display: block;
+  margin: auto;
+  background-position: center;
+  background-size: cover;
+  padding-bottom: 2rem;
+}
+#profile_settings .profile_settings_wraper .user_details .body {
+  width: 100%;
+  margin-top: 2rem;
+}
+#profile_settings .profile_settings_wraper .user_details .body li {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  border-top: 2px solid var(--border);
+}
+#profile_settings .profile_settings_wraper .user_settings {
+  padding: 2rem;
+  margin-top: 4rem;
+  box-shadow: var(--box-shadow);
+  border-radius: var(--border-radius);
+}
+#profile_settings .profile_settings_wraper .user_settings .navbar {
+  width: 100%;
+  padding-bottom: 2rem;
+  border-bottom: 3px solid var(--blue);
+}
+#profile_settings .profile_settings_wraper .user_settings .navbar ul {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+#profile_settings .profile_settings_wraper .user_settings .navbar ul li {
+  width: 31%;
+  border: 1px solid var(--border);
+  text-align: center;
+  height: 7rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: var(--border-radius);
+}
+#profile_settings .profile_settings_wraper .user_settings .navbar ul li.title.active {
+  background: green;
+  color: white;
+  border: none;
+}
+#profile_settings .profile_settings_wraper .content {
+  padding-top: 2rem;
+}
+#profile_settings .profile_settings_wraper .content .personal_info .main_box {
+  width: 100%;
+}
+#profile_settings .profile_settings_wraper .content .personal_info .main_box .left_part {
+  width: 29%;
+  display: inline-block;
+}
+#profile_settings .profile_settings_wraper .content .personal_info .main_box .right_part {
+  width: 70%;
+  display: inline-block;
+}
+#profile_settings .profile_settings_wraper .content .personal_info .main_box .right_part .input_box {
+  margin-bottom: 2rem;
+}
+#profile_settings .profile_settings_wraper .content .personal_info .main_box .right_part .fff {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 2rem;
+}/*# sourceMappingURL=main.css.map */

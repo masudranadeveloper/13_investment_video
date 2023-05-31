@@ -1,0 +1,101 @@
+.pie_chart_box {
+  padding: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.pie_chart_box .box {
+  box-shadow: var(--box-shadow);
+  width: 47%;
+  border-radius: var(--border-radius);
+}
+
+#deshbord_users {
+  background-image: url(../../../images/home/deshbord_user.jpg);
+  background-attachment: fixed;
+}
+#deshbord_users .pie_chart_box .box {
+  border-radius: var(--border-radius);
+  border-bottom: 15px solid var(--blue);
+  border-top: 5px solid var(--blue);
+  box-shadow: 5px 5px 15px #000;
+  -webkit-backdrop-filter: blur(10px);
+          backdrop-filter: blur(10px);
+}
+#deshbord_users .title {
+  color: white !important;
+}
+
+.users_details {
+  padding: 2rem;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 2rem;
+}
+.users_details .box {
+  border-radius: var(--border-radius);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  box-shadow: 5px 5px 15px #3c3c3c, -5px -5px 15px #343434;
+  border-bottom: 5px solid var(--text-color-active);
+  -webkit-backdrop-filter: blur(10px);
+          backdrop-filter: blur(10px);
+}
+.users_details .box .header {
+  background: var(--text-color-active);
+  width: 100%;
+  padding: 2rem;
+  border-radius: var(--border-radius) var(--border-radius) 0 0;
+}
+.users_details .box .header h2 {
+  color: var(--white);
+  text-align: center;
+}
+.users_details .box .footer {
+  padding-top: 2rem;
+  width: 100%;
+}
+.users_details .box .footer ul {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding: 1.5rem;
+}
+.users_details .box .footer ul li {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 1px solid var(--border);
+  padding-bottom: 0.7rem;
+}
+.users_details .box .footer ul li:last-child {
+  border-bottom: 0;
+  padding-top: 0.7rem;
+  padding-bottom: 0;
+}
+
+.details_home .recentOrders {
+  box-shadow: 5px 5px 15px #3c3c3c, -5px -5px 15px #343434;
+}
+
+@media only screen and (max-width: 768px) {
+  .users_details {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media only screen and (max-width: 425px) {
+  .pie_chart_box {
+    display: block;
+  }
+  .pie_chart_box .box {
+    width: 100%;
+    margin-top: 2rem;
+  }
+  .users_details {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}/*# sourceMappingURL=main.css.map */

@@ -1,0 +1,35 @@
+#withdraw_request {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+}
+#withdraw_request .withdraw_request_wrapper {
+  margin-top: 4rem;
+  margin-bottom: 4rem;
+  box-shadow: var(--box-shadow);
+  width: 70%;
+  padding: 2rem;
+  border: var(--border);
+}
+#withdraw_request .withdraw_request_wrapper p.title {
+  padding-bottom: 4rem;
+}
+#withdraw_request .withdraw_request_wrapper .input_box {
+  margin-bottom: 2rem;
+  margin-top: 1rem;
+}
+#withdraw_request .withdraw_request_wrapper .btn-group {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+#withdraw_request .withdraw_request_wrapper .btn-group button {
+  width: 40%;
+}
+
+@media (max-width: 768px) {
+  #withdraw_request .withdraw_request_wrapper {
+    width: 90%;
+  }
+}/*# sourceMappingURL=main.css.map */
